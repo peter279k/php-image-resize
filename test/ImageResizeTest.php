@@ -41,7 +41,7 @@ class ImageResizeTest extends TestCase
 
     public function testLoadIgnoreXmpExifJpg()
     {
-        $image = __DIR__.'/ressources/test_xmp.jpg';
+        $image = __DIR__.'/resources/test_xmp.jpg';
         $resize = new ImageResize($image);
 
         $this->assertEquals(IMAGETYPE_JPEG, $resize->source_type);
