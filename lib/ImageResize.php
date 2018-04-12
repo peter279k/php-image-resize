@@ -257,15 +257,6 @@ class ImageResize
 
         imageinterlace($dest_image, $this->interlace);
 
-        var_dump($this->dest_x);
-        var_dump($this->dest_y);
-        var_dump($this->source_x);
-        var_dump($this->source_y);
-        var_dump($this->source_w);
-        var_dump($this->source_h);
-        var_dump($this->getDestWidth());
-        var_dump($this->getDestHeight());
-
         imagecopyresampled(
             $dest_image,
             $this->source_image,
